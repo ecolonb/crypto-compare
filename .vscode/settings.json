@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/usr/local/bin/python",
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+	"python.analysis.extraPaths": ["./src"]
+}

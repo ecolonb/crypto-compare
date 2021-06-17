@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  python_flask:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python_flask_dev_container
+    env_file:
+      - .env-compose
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/usr/src/app
+    tty: true
+    command: echo "Hello world - Iam a container dev!"
+    networks:
+      dev-network:
+        aliases:
+          - python_host
+  
+networks:
+  dev-network:

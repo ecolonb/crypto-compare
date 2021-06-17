@@ -1,0 +1,8 @@
+alias gs="git status -s -b"
+alias lg="log --oneline --decorate  --all --graph"
+alias gco="git checkout"
+alias p="pwd"
+alias gp="git pull"
+alias gpom="git pull origin master"
+alias l="ls -la"
+alias p="pwd"
