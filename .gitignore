@@ -1,6 +1,6 @@
 *ignore*.*
 .env
-
+.env-compose
 ### OSX ###
 .DS_Store
 .AppleDouble

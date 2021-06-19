@@ -1,7 +1,12 @@
 {
-    "python.pythonPath": "/usr/local/bin/python",
-    "emmet.includeLanguages": {
-        "django-html": "html"
-    },
-	"python.analysis.extraPaths": ["./src"]
+  "python.pythonPath": "/usr/local/bin/python",
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "python.analysis.extraPaths": ["./src"],
+  "python.analysis.autoImportCompletions": false,
+  "editor.codeActionsOnSave": {
+    // "source.organizeImports": false
+  }
+  //   "editor.formatOnSave": false
 }

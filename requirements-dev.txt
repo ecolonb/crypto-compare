@@ -1,4 +1,6 @@
 flask
-PyJWT==2.1.0
 autopep8
 pylint
+flask_cors
+flask_socketio
+requests

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"
+      charset="UTF-8"
+    ></script>
+    <title>Flask - Socket</title>
+  </head>
+  <body>
+    Socket test
+    <ul class="messages"></ul>
+    <label for="message">Message: </label>
+    <input type="text" name="message" id="message" />
+    <button id="sendMessage">Send</button>
+
+    <script>
+      console.log("Loaded document")
+      const socketIo = io()
+      socketIo.emit("message", "Hello world!")
+      setInterval(() => {
+        console.log("Emiting update-coin")
+        socketIo.emit("updateCoin", "getNews")
+      }, 10000)
+
+      socketIo.on("receivedUpdateCoin", (messageReceived) => {
+        console.log("receivedUpdateCoin")
+        console.log(messageReceived)
+      })
+    </script>
+  </body>
+</html>

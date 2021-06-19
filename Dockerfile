@@ -7,7 +7,17 @@ COPY . .
 RUN mv .bashrc /root/
 CMD ["/bin/source","/root/.bashrc"]
 
-EXPOSE 8000
+# to react development
+RUN apt update
+RUN apt -y upgrade
+RUN apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash
+RUN apt -y install nodejs
+RUN apt -y  install gcc g++ make
 
-# RUN pip install -r requirements.txt
+EXPOSE 8000
+EXPOSE 3000
+EXPOSE 5000
+
+RUN pip install -r requirements.txt
 RUN pip install -r requirements-dev.txt

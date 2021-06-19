@@ -33,21 +33,23 @@
   },
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
-    "ms-python.python",
-    "ms-toolsai.jupyter",
-    "cstrap.flask-snippets",
-    "donjayamanne.python-extension-pack",
-    "fallenmax.mithril-emmet",
-    "samuelcolvin.jinjahtml",
-    "cstrap.flask-snippets",
-    "henriblancke.vscode-dbt-formatter",
-    "esbenp.prettier-vscode",
-    "mblode.pretty-formatter",
-    "shamanu4.django-intellisense"
-  ],
+	"ms-python.python",
+	"ms-toolsai.jupyter",
+	"cstrap.flask-snippets",
+	"donjayamanne.python-extension-pack",
+	"fallenmax.mithril-emmet",
+	"samuelcolvin.jinjahtml",
+	"cstrap.flask-snippets",
+	"henriblancke.vscode-dbt-formatter",
+	"esbenp.prettier-vscode",
+	"mblode.pretty-formatter",
+	"shamanu4.django-intellisense",
+	"frhtylcn.pythonsnippets",
+	"jawandarajbir.react-vscode-extension-pack"
+],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [8000]
+  "forwardPorts": [8000, 5000, 3000]
   // Uncomment the next line if you want start specific services in your Docker Compose config.
   // "runServices": [],
   // Uncomment the next line if you want to keep your containers running after VS Code shuts down.
