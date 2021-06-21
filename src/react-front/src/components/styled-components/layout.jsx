@@ -24,7 +24,7 @@ export const RowTabs = styled.div`
 export const Tab = styled.div`
   width: ${(props) => (props.width ? props.width : "auto")};
   height: ${(props) => (props.height ? props.height : "auto")};
-  border: ${(props) => (props.border ? '1px solid gray' : "unset")};
+  border: ${(props) => (props.border ? "1px solid gray" : "unset")};
   cursor: pointer;
   text-align: ${(props) => (props.align ? props.align : "unset")};
   margin: ${(props) => (props.margin ? props.margin : "unset")};
@@ -51,4 +51,5 @@ export const ItemScore = styled.section`
   height: 189px;
   background-color: #d8d8d7;
   border: 1px solid gray;
+  overflow-x: hidden;
 `

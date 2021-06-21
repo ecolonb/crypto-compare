@@ -37,9 +37,41 @@ function Dashboard() {
         </Tab>
       </RowTabs>
       <ScoreSection>
-        <ItemScore>1</ItemScore>
-        <ItemScore>2</ItemScore>
-        <ItemScore>3</ItemScore>
+        <ItemScore>
+          {allCurrentCoinsValue.map((item, key) => {
+            let formatedDate = new Date(item.current_time)
+            formatedDate = `${formatedDate.getHours()}:${formatedDate.getMinutes()}:${formatedDate.getSeconds()}`
+            return (
+              <p key={key}>
+                {formatedDate} / {item.coins_value["BTC"]["MXN"]}{" "}
+              </p>
+            )
+          })}
+        </ItemScore>
+        <ItemScore>
+          {" "}
+          {allCurrentCoinsValue.map((item, key) => {
+            let formatedDate = new Date(item.current_time)
+            formatedDate = `${formatedDate.getHours()}:${formatedDate.getMinutes()}:${formatedDate.getSeconds()}`
+            return (
+              <p key={key}>
+                {formatedDate} / {item.coins_value["BTC"]["MXN"]}{" "}
+              </p>
+            )
+          })}
+        </ItemScore>
+        <ItemScore>
+          {" "}
+          {allCurrentCoinsValue.map((item, key) => {
+            let formatedDate = new Date(item.current_time)
+            formatedDate = `${formatedDate.getHours()}:${formatedDate.getMinutes()}:${formatedDate.getSeconds()}`
+            return (
+              <p key={key}>
+                {formatedDate} / {item.coins_value["BTC"]["MXN"]}{" "}
+              </p>
+            )
+          })}
+        </ItemScore>
       </ScoreSection>
       <RowTabs bgColor='#d8d8d7' padding='5px' width='calc(100% - 10px)'>
         <Tab width='144px' height='87px'>
