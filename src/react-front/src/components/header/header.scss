@@ -1,0 +1,26 @@
+.header-component {
+    width: calc(100vw - 68px);
+    height: 55px;
+    background-color: #1F232B;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 34px;
+    button {
+        cursor: pointer;
+        height: 50px;
+        width:50px;
+        display: inline-block;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        svg {
+            color: #63D9FC;
+        }
+    }
+    .user-info {
+        color: #63D9FC;
+        text-transform: capitalize;
+
+    }
+}

@@ -19,16 +19,11 @@
 
     <script>
       console.log("Loaded document")
-      const socketIo = io()
-      socketIo.emit("message", "Hello world!")
-      setInterval(() => {
-        console.log("Emiting update-coin")
-        socketIo.emit("updateCoin", "getNews")
-      }, 10000)
+      const socketIo = io("http://localhost:5000")
+      socketIo.emit("firstUpdate", null)
 
-      socketIo.on("receivedUpdateCoin", (messageReceived) => {
-        console.log("receivedUpdateCoin")
-        console.log(messageReceived)
+      socketIo.on("updateCoins", (data) => {
+        console.log(data)
       })
     </script>
   </body>

@@ -19,5 +19,5 @@ EXPOSE 8000
 EXPOSE 3000
 EXPOSE 5000
 
-RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt
 RUN pip install -r requirements-dev.txt

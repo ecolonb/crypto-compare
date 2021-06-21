@@ -45,7 +45,8 @@
 	"mblode.pretty-formatter",
 	"shamanu4.django-intellisense",
 	"frhtylcn.pythonsnippets",
-	"jawandarajbir.react-vscode-extension-pack"
+	"jawandarajbir.react-vscode-extension-pack",
+	"jpoissonnier.vscode-styled-components"
 ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.

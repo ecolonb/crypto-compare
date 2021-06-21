@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request as requestFlask
 from flask_cors import CORS
 
 from flask_socketio import SocketIO, send
