@@ -1,5 +1,4 @@
-import React from "react"
-import { useContext } from "react"
+import React, { useContext } from "react"
 import { Route, Switch, Redirect } from "react-router-dom"
 
 import GlobalContext from "../context/globalContext"
@@ -7,11 +6,12 @@ import GlobalContext from "../context/globalContext"
 import Dashboard from "./dashboard/Dashboard"
 import WelcomePage from "./welcome/Welcome"
 import Header from "../components/header/Header"
+import Loading from "../components/loading/Loading"
 
 import PrivateRoute from "../hoc/PrivateRoute"
 
 function Router() {
-  const { userInfo } = useContext(GlobalContext)
+  const { isLoading, userInfo } = useContext(GlobalContext)
   return (
     <>
       <Header />
@@ -26,6 +26,14 @@ function Router() {
         />
         <Redirect to='/' />
       </Switch>
+      <Loading
+        message={
+          <>
+            ¡Please, wait! <br /> Loading
+          </>
+        }
+        show={isLoading}
+      />
     </>
   )
 }
