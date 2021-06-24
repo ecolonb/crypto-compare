@@ -87,6 +87,7 @@ function WelcomeForm({ history }) {
         type='submit'
         className='submit-button'
         disabled={isDisabledForm}
+        width='100%'
       >
         Submit
       </PrimaryButton>

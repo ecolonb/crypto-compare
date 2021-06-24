@@ -2,6 +2,10 @@
 
 This project uses a Devcontainer in VsCode, it is necessary to have Docker installed locally, and in vscode the docker tools, remote-containers.
 
+### Environment file
+
+rename .env-compose.example for .env-compose
+
 Just press [CTRL-SHIFT-P] and write (remote-containers) choose -> Reopen in container.
 
 ## When the development container is completely created

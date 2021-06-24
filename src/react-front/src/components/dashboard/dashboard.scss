@@ -1,0 +1,16 @@
+.bottom-area {
+  @media (min-width: 1px) and (max-width: 534px) {
+    flex-direction: column;
+    .convert-area {
+      width: calc(100% - 30px);
+      padding: 21px 10px 0 10px;
+
+      div {
+        width: 100%;
+      }
+    }
+    > input {
+      width: 100%;
+    }
+  }
+}

@@ -25,12 +25,13 @@ const stylesBtn = css`
 `
 
 export const PrimaryButton = styled.button`
-  ${stylesBtn}
+  ${stylesBtn};
   display: block;
   background-color: #63d9fc;
   border-radius: 8px;
   color: #fff !important;
   border: 1px solid transparent;
+  width: ${(props) => (props.width ? props.width : "unset")};
   &:disabled {
     background-color: #dcdbdb;
     cursor: not-allowed;
@@ -39,7 +40,7 @@ export const PrimaryButton = styled.button`
 `
 
 export const PrimaryOutlineButton = styled.button`
-  ${stylesBtn}
+  ${stylesBtn};
   display: block;
   background-color: #ffffff;
   border-radius: 8px;

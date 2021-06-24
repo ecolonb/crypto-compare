@@ -7,7 +7,8 @@ export const TitleSection = styled.h3`
 
 export const Label = styled.label`
   display: inline-block;
-  font-size: 21px;
+  font-size: ${(props) => props.fontSize || "21px"};
   width: 100%;
   text-align: center;
+  cursor: ${(props) => props.cursor || "default"};
 `
